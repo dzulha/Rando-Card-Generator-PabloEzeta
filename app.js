@@ -61,9 +61,7 @@ function generateRandomCard() {
 
     // Obtener el contenedor donde queremos mostrar la carta
     const cardContainer = document.getElementById('card-container');
-    // Limpiar cualquier carta anterior en el contenedor
     cardContainer.innerHTML = '';
-    // Añadir la nueva carta al contenedor
     cardContainer.appendChild(cardDiv);
 }
 
@@ -78,12 +76,12 @@ function applyCardSize() {
 
     // Validar y asegurar que los valores sean válidos
     if (isNaN(newWidth) || newWidth <= 0) {
-        newWidth = 200; // Valor por defecto si el input es inválido
-        cardWidthInput.value = 200; // Restablecer el input
+        newWidth = 200; 
+        cardWidthInput.value = 200;
     }
     if (isNaN(newHeight) || newHeight <= 0) {
-        newHeight = 300; // Valor por defecto si el input es inválido
-        cardHeightInput.value = 300; // Restablecer el input
+        newHeight = 300;
+        cardHeightInput.value = 300;
     }
 
     // Asegurarse de que los valores sean mayores a los mínimos
